@@ -3,7 +3,7 @@
 const dcCharacters = [
     {
         name: "Batman",
-        image: "/images/batman.jpg",
+        image: "images/batman.jpg",
         facts: "Etter å ha mistet foreldrene sine, sverget Bruce Wayne å bekjempe kriminalitet i Gotham City. Han har ingen superkrefter, men bruker intelligens, kampsport og avansert teknologi."
     },
     {
