@@ -29,23 +29,31 @@ const dcCharacters = [
     {
         name: "Harley Quinn",
         image: "images/harleyquinn.jpg",
-        facts: "Tidligere psykiater ved Arkham Asylum under navnet Harleen Quinzel. Hun ble fascinert av Jokeren, hjalp ham å rømme, og ble hans akrobatiske og uforutsigbare partner i partner-in-crime."
+        facts: "Tidligere psykiater ved Arkham Asylum under navnet Harleen Quinzel. Hun ble fascinert av Jokeren, hjalp ham å rømme, og ble hans akrobatiske og uforutsigbare partner-in-crime."
     }
 ];
-
+// DOM-KOBBLINGER (Henter elementer fra HTML)
+// Henter referansen fra index.html Denne gjør så at javascript kan bytte navnet til karakteren som blir valgt i javacript(Arrayet)
 const nameDisplay = document.getElementById("character-name");
+// Henter referansen fra index.html Denne gjør så at javascript kan bytte bilder som er tilknyttet karakteren som blir valgt i javascript(Arrayet)
 const imageDisplay = document.getElementById("character-image");
+// Henter referansen fra index.html Denne gjør så at javascriptet kan endre Paragraphen i htmlen. denne teksten blir endret fra info teksten i javascript(Arrayet)
 const factsDisplay = document.getElementById("character-facts");
+// Henter referansen fra index.html Denne skal brukes til å starte å starte showRandomCharacter funskjonen når man trykker på knappen
 const selectButton = document.getElementById("select-button");
 
 function showRandomCharacter() {
+    // Her så gjør jeg at funksjonen blir math.random ganges med dcCharacter.length. Så det blir et tall fra 0.00 til 5.99 siden det er seks objekter i arrayet og vi bruker math.floor til å runde av til et helt tall
     const randomIndex = Math.floor(Math.random() * dcCharacters.length);
-
+    // Her forteller vi choosenCharacter hvilken plass som har blitt trukket i arrayet
     const choosenCharacter = dcCharacters[randomIndex]
 
+    // textContent går inn inn htmlen og endrer character name til navnet i den valgte arrayet
     nameDisplay.textContent = choosenCharacter.name;
+    // Her går text.content å endrer paragrapghen som er ID tagget med character-facts. den endrer teksten etter hvilken character som blir valgt i arrayet 
     factsDisplay.textContent = choosenCharacter.facts;
+    // Her oppgraderer src attributen i bilde elemtet på htmlen. slik at bildet blir endret i htmlen når vi kjører funskjonen. det blir tatt ifra arrayen. 
     imageDisplay.src = choosenCharacter.image;
 }
-
+// Når noen trykker på selectButton så vil showRandomCharacter funskjonen kjøre. selectButtom.addeventlistener hører etter når man trykker på knappen.
 selectButton.addEventListener("click", showRandomCharacter);
