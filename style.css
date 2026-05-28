@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +13,7 @@ body {
 
 html {
   font-size: 1rem;
+  
 }
 
 .hero-randomizer {
@@ -38,7 +40,7 @@ h1,
 h2,
 img,
 p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -55,7 +57,7 @@ p {
 
 img {
   width: 250px;
-  height: 300px;
+  height: 250px;
   display: block;
   border-radius: 10px;
 }
@@ -81,3 +83,10 @@ img {
   font-weight: 700;
   border-radius: 10px;
 }
+
+
+   
+   
+
+
+

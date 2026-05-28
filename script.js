@@ -19,7 +19,7 @@ const dcCharacters = [
     {
         name: "The Joker",
         image: "./Images/joker.jpg",
-        facts: "Gothams mest beryktede kriminelle og Batmans erkefiende. Han er en uforutsigbar, nihilistisk kaosbaktanke som gjemmer sine onde planer bak et klovneansikt."
+        facts: "En uforutsigbar skurk som bare lever for å skape fullstendig lovløshet. Batmans erkefiende bruker det ikoniske klovneutseendet sitt som en skummel kontrast til sine onde og gale planer."
     },
     {
         name: "Lex Luthor",
