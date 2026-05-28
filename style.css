@@ -8,11 +8,10 @@ body {
   background-image: url(Images/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 html {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .hero-randomizer {
@@ -29,39 +28,56 @@ html {
   justify-content: center;
   color: aliceblue;
 
-  background-color: rgba(0, 0, 0, 0.6); 
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
 }
 
-h1, h2, img, p {
-    margin-bottom: 20px;
+h1,
+h2,
+img,
+p {
+  margin-bottom: 20px;
 }
 
 h1 {
-
 }
 
 h2 {
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 p {
-    font-size: 1.5rem;
-    width: 80%;
-    /* margin: auto; */
+  font-size: 1.5rem;
+  width: 80%;
 }
-
 
 img {
   width: 250px;
-  height: 350px;
-  border-radius: 8px;
+  height: 300px;
+  display: block;
+  border-radius: 10px;
+}
+
+#facts-container {
+  height: 150px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#character-facts {
+  margin: 0;
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
 }
 
 #select-button {
   padding: 10px;
+  font-weight: 700;
+  border-radius: 10px;
 }
-
-
