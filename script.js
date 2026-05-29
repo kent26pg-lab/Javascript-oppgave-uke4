@@ -13,7 +13,7 @@ const dcCharacters = [
     },
     {
         name: "Wonder Woman",
-        image: "./Images/wonderwoman.jpg",
+        image: "./Images/wonderwoman.jpg", 
         facts: "Prinsesse Diana av Themyscira er en amasonekriger med krefter fra de greske gudene. Hun kjemper for fred og rettferdighet med sitt magiske sannhetslasso."
     },
     {
@@ -57,3 +57,5 @@ function showRandomCharacter() {
 }
 // Når noen trykker på selectButton så vil showRandomCharacter funskjonen kjøre. selectButtom.addeventlistener hører etter når man trykker på knappen.
 selectButton.addEventListener("click", showRandomCharacter);
+
+// Det jeg har laget på denne nettsiden er en tilfeldig karakter velger av karakterer fra DC universet. Der jeg har laget et Array of objects. der jeg har lagret navn på karakteren, et bilde av karakteren og en liten fakta paragraph. Disse blir byttet hver gang man kjører funskjonen showRandomCharacter. Det gjør man med å trykke på Trykk her! knappen.
