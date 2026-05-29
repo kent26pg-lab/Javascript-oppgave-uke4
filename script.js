@@ -52,7 +52,7 @@ function showRandomCharacter() {
     nameDisplay.textContent = choosenCharacter.name;
     // Her går text.content å endrer paragrapghen som er ID tagget med character-facts. den endrer teksten etter hvilken character som blir valgt i arrayet 
     factsDisplay.textContent = choosenCharacter.facts;
-    // Her oppgraderer src attributen i bilde elemtet på htmlen. slik at bildet blir endret i htmlen når vi kjører funskjonen. det blir tatt ifra arrayen. 
+    // Her blir src attributen oppdatert i bilde elemtet på htmlen. slik at bildet blir endret i htmlen når vi kjører funskjonen. det blir tatt ifra arrayen. 
     imageDisplay.src = choosenCharacter.image;
 }
 // Når noen trykker på selectButton så vil showRandomCharacter funskjonen kjøre. selectButtom.addeventlistener hører etter når man trykker på knappen.
