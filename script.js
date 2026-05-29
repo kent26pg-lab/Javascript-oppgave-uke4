@@ -1,35 +1,46 @@
 
 // Et Array med objekter 
-const dcCharacters = [
+let dcCharacters = [
     {
         name: "Batman",
         image: "./Images/batman.jpg",
-        facts: "Etter å ha mistet foreldrene sine, sverget Bruce Wayne å bekjempe kriminalitet i Gotham City. Han har ingen superkrefter, men bruker intelligens, kampsport og avansert teknologi."
+        facts: "Etter å ha mistet foreldrene sine, sverget Bruce Wayne å bekjempe kriminalitet i Gotham City. Han har ingen superkrefter, men bruker intelligens, kampsport og avansert teknologi.",
+        altText: "Et portrett av batman mot en mørk bakgrunn"
     },
     {
         name: "Superman",
         image: "./Images/superman.jpg",
-        facts: "Sendt til jorden fra den døende planeten Krypton. Under jordens gule sol har han superkrefter som usårbarhet, evnen til å fly og røntgensyn, men han svekkes av kryptonitt."
+        facts: "Sendt til jorden fra den døende planeten Krypton. Under jordens gule sol har han superkrefter som usårbarhet, evnen til å fly og røntgensyn, men han svekkes av kryptonitt.",
+        altText: "Et bilde der superman flyr foran solen"
+
     },
     {
         name: "Wonder Woman",
         image: "./Images/wonderwoman.jpg", 
-        facts: "Prinsesse Diana av Themyscira er en amasonekriger med krefter fra de greske gudene. Hun kjemper for fred og rettferdighet med sitt magiske sannhetslasso."
+        facts: "Prinsesse Diana av Themyscira er en amasonekriger med krefter fra de greske gudene. Hun kjemper for fred og rettferdighet med sitt magiske sannhetslasso.",
+        altText: "Et bilde der wonderwoman holder sannhetslassoen, hun står foran masse skyer"
+
     },
     {
         name: "The Joker",
         image: "./Images/joker.jpg",
-        facts: "En uforutsigbar skurk som bare lever for å skape fullstendig lovløshet. Batmans erkefiende bruker det ikoniske klovneutseendet sitt som en skummel kontrast til sine onde og gale planer."
+        facts: "En uforutsigbar skurk som bare lever for å skape fullstendig lovløshet. Batmans erkefiende bruker det ikoniske klovneutseendet sitt som en skummel kontrast til sine onde og gale planer.",
+        altText: "Et portrett av jokeren bak et fengselsbur"
+
     },
     {
         name: "Lex Luthor",
         image: "./Images/lexluthor.jpg",
-        facts: "En av verdens smarteste menn og en milliardær-forretningsmann. Han ser på Superman som en trussel mot menneskeheten og bruker sin enorme formue og intellekt på å bekjempe ham."
+        facts: "En av verdens smarteste menn og en milliardær-forretningsmann. Han ser på Superman som en trussel mot menneskeheten og bruker sin enorme formue og intellekt på å bekjempe ham.",
+        altText: "et bilde av lex luthor i en exo-skeleton, bakgrunnen er gjennomsiktig."
+
     },
     {
         name: "Harley Quinn",
         image: "./Images/harleyquinn.jpg",
-        facts: "Tidligere psykiater ved Arkham Asylum under navnet Harleen Quinzel. Hun ble fascinert av Jokeren, hjalp ham å rømme, og ble hans akrobatiske og uforutsigbare partner-in-crime."
+        facts: "Tidligere psykiater ved Arkham Asylum under navnet Harleen Quinzel. Hun ble fascinert av Jokeren, hjalp ham å rømme, og ble hans akrobatiske og uforutsigbare partner-in-crime.",
+        altText: "Harley Quinn med en komisk stor hammer i hendene, bakgrunnen er hvit."
+
     }
 ];
 // DOM-KOBBLINGER (Henter elementer fra HTML)
@@ -54,6 +65,7 @@ function showRandomCharacter() {
     factsDisplay.textContent = choosenCharacter.facts;
     // Her blir src attributen oppdatert i bilde elemtet på htmlen. slik at bildet blir endret i htmlen når vi kjører funskjonen. det blir tatt ifra arrayen. 
     imageDisplay.src = choosenCharacter.image;
+    imageDisplay.alt = choosenCharacter.altText;
 }
 // Når noen trykker på selectButton så vil showRandomCharacter funskjonen kjøre. selectButtom.addeventlistener hører etter når man trykker på knappen.
 selectButton.addEventListener("click", showRandomCharacter);
